@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Masterpages_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<title>S.I Technology Repair</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+        <%--Script for Header--%>
+            <header class="w3-container w3-padding w3-row-padding">
+               <div class ="col-12">
+                    <div class="w3-center">
+                        <img src="../img/LogoBlue.svg" style="width: 100%;" />
+
+                    </div>
+                </div>
+            </header>
+    
+<div>
+    <asp:ContentPlaceHolder id="mainCP" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</div>
+
+
+        <%--Section for footer--%>
+    <footer class="w3-container" style="min-height: 80px;">
+        <div class="col-9"></div>
+                   <div class="col-1 SocCol" style="align-items: center;">
+<img src="../img/Facebook.png"/>
+               </div>
+           <div class="col-1 SocCol" style="align-items: center;">
+<img src="../img/Whatsapp.png"/>
+               </div>
+           <div class="col-1 SocCol" style="align-items: center;">
+<img src="../img/Mail.png"/>
+          </div>
+            <div class="col-12 Footer1">
+                <h2 style="font-size: 14px; text-align: center;">© 2019 S.I Technology Repair </h2>
+                </div>
+
+
+
+    </footer>
+        <script async type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/c9cdb4b4c1e8595192a90e4ca9f538eade77ce409bf54bb5bfb8b31cad410433.js"></script> 
+</form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script>
+var myIndex1 = 0;
+Carousel();
+
+function Carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex1++;
+  if (myIndex1 > x.length) {myIndex1 = 1}    
+  x[myIndex1-1].style.display = "block";  
+  setTimeout(Carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</html>

@@ -1,0 +1,274 @@
+﻿*****Master*****
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Masterpages_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<title>S.I Technology Repair</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="../StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <header class="w3-container w3-padding w3-row-padding blueBlock">
+               <div class ="col-12">
+                    <div class="w3-center">
+                        <h1>S.I Technology Repair</h1>
+                    </div>
+                </div>
+            </header>
+    
+<div>
+    <asp:ContentPlaceHolder id="mainCP" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</div>
+
+    <div class="w3-container w3-padding w3-row-padding">
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+        <div class ="SocCol-1">Social Icons</div>
+    </div>
+
+    <footer class="w3-container w3-padding w3-row-padding w3-center blueBlock">
+            <div class="col-12">
+                <h2>© 2019 S.I Technology Repair</h2>
+            </div>
+    </footer>
+</form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</html>
+
+******Default******
+<%@ Page Title="" Language="C#" MasterPageFile="~/Masterpages/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="mainCP" Runat="Server">
+
+        <div class="w3-container w3-center w3-padding w3-row-padding" id="Carousel">
+            <div class="col-12">
+                <h1>Carousel goes here</h1>
+            </div>
+        </div>
+
+
+    <div class="w3-row-padding w3-padding  w3-center  blueBlock" id="Cards">      
+        <div class="w3-third">
+            <div class="w3-card w3-container w3-padding w3-row-padding" style="min-height: 200px" id="card1">
+                <h1>Repairs</h1>
+                <br>
+                <i class="fa fa-cogs w3-margin-bottom w3-text-theme" style="font-size: 120px"></i>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container w3-padding w3-row-padding" style="min-height: 200px" id="card2">
+                <h1>About Us</h1>
+                <br>
+                <i class="fa fa-question w3-margin-bottom w3-text-theme" style="font-size: 120px"></i>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container w3-padding w3-row-padding" style="min-height: 200px;" id="card3">
+                <h1>Contact Us</h1>
+                <br>
+                <i class="fa fa-phone w3-margin-bottom w3-text-theme" style="font-size: 120px"></i>
+                </div>
+        </div>
+    </div>
+    
+        <div class="w3-container w3-padding w3-row-padding w3-center" id="Choose">
+        <div class="col-12">
+            <h1>Why Choose Us?</h1>
+        </div>
+    </div>
+    
+
+    <div class="w3-container  w3-padding w3-row-padding blueBlock w3-center" id="Testimonials">
+        <div class="col-12">
+            <h1>Testimonials</h1>
+        </div>
+    </div>
+
+
+</asp:Content>
+
+
+******Style*****
+
+
+.blueBlock {
+    background-color: #1799e2;
+}
+
+
+.w3-third {
+    float: left;
+    width: 100%;
+}
+
+
+@media (min-width:601px) {
+    .w3-third {
+        width: 33.33333%;
+    }
+}
+
+
+.w3-row-padding,.w3-row-padding > .w3-third, .w3-row-padding > .w3-twothird, .w3-row-padding > .w3-col {
+    padding: 0 8px
+}
+
+.w3-card {
+    background-color: white;
+    color: black;  
+}
+
+.w3-center {
+    text-align: center !important
+}
+
+
+.w3-padding {
+    padding: 8px 16px !important
+}
+
+.w3-text-theme {
+    color: #1799e2 !important
+}
+
+* {
+    box-sizing: border-box;
+}
+
+row {
+    border: solid black 5px;
+
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] :not(.social) {
+        width: 100%;
+    }
+}
+
+.SocCol-1 {
+    width: 8.33%;
+    float: left;
+    margin-bottom: 5px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="SocCol"] {
+        width: 25%;
+    }
+    #card1, #card2, #card3 {
+        margin-top :5px;
+
+    }
+}
+
+#header {
+    border: 2px solid green;
+}
+
+.w3-container:after, .w3-container:before, .w3-row-padding:after, .w3-row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.w3-container{
+    padding: 0.01em 16px
+}
+
+.w3-margin-top {
+    margin-top: 16px !important
+}
+
+.w3-margin-bottom {
+    margin-bottom: 16px !important
+}

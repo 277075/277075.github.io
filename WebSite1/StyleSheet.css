@@ -1,0 +1,243 @@
+﻿body {
+    background-color: #ffffff
+}
+
+.blueBlock {
+    background-color: #312783;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.whiteBlock {
+    background-color: #FFFFFF;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.w3-third {
+    float: left;
+    width: 100%;
+}
+
+
+@media (min-width:601px) {
+    .w3-third {
+        width: 33.33333%;
+    }
+}
+
+
+.w3-row-padding,.w3-row-padding > .w3-third, .w3-row-padding > .w3-twothird, .w3-row-padding > .w3-col {
+    padding: 0 8px
+}
+
+.w3-card {
+    background-color: #312783;
+    color: White;
+    text-align: center;
+}
+
+a:link {
+    color: White;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:visited {
+    color: White;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+
+a:hover {
+    color: White;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+a:active {
+    color: White;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+
+#card1, #card2, #card3 {
+    background-color: #312783;
+    color: White;
+    text-decoration: none;
+}
+
+
+.w3-center {
+    text-align: center !important
+}
+
+
+.w3-padding {
+    padding: 8px 16px !important
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.col-1 {
+    width: 8.33%;
+    float: left;
+    padding: 15px;
+}
+
+.col-2 {
+    width: 16.66%;
+    float: left;
+    padding: 15px;
+}
+
+.col-3 {
+    width: 25%;
+    float: left;
+    padding: 15px;
+}
+
+.col-4 {
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+
+.col-5 {
+    width: 41.66%;
+    float: left;
+    padding: 15px;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.col-7 {
+    width: 58.33%;
+    float: left;
+    padding: 15px;
+}
+
+.col-8 {
+    width: 66.66%;
+    float: left;
+    padding: 15px;
+}
+
+.col-9 {
+    width: 75%;
+    float: left;
+    padding: 15px;
+}
+
+.col-10 {
+    width: 83.33%;
+    float: left;
+    padding: 15px;
+}
+
+.col-11 {
+    width: 91.66%;
+    float: left;
+    padding: 15px;
+}
+
+.col-12 {
+    width: 100%;
+    float: left;
+}
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        width: 70%;
+        margin-left : 15%;
+        margin-right: 15%; 
+    }
+}
+
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] :not(.social) {
+            width: 100%;
+        }
+        .SocCol {
+            width: 33.33%;
+            float: right;
+        }
+    }
+    
+
+    .SocCol{
+        width: 8%;
+        float: right;
+        margin-bottom: 5px;
+    }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="SocCol"] {
+        width: 33.33%;
+        float: right;
+    }
+}
+
+    #card1, #card2, #card3 {
+        margin-top: 5px;
+    }
+
+
+
+    .w3-container:after, .w3-container:before, .w3-row-padding:after, .w3-row-padding:before {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .w3-container {
+        padding: 0.01em 16px
+    }
+
+    .w3-margin-top {
+        margin-top: 16px !important
+    }
+
+    .w3-margin-bottom {
+        margin-bottom: 16px !important
+    }
+
+    .map {
+        min-width: 300px;
+        min-height: 275px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+
+
+
